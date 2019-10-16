@@ -18,8 +18,8 @@ switch(process.argv[2]) {
 
 (async () => {
   const browser = await puppeteer.launch({
-    headless: false,  // dev
-    //headless: true,  // prd
+    //headless: false,  // dev
+    headless: true,  // prd
     slowMo: 30
   })
   const page = await browser.newPage()
